@@ -53,10 +53,13 @@ body {
     h1 {
         color: variables.$tertiary-color;
         font-size: 55px;
+        letter-spacing: 3px;
     }
     h2 {
         color: variables.$tertiary-color;
-        font-size: 35px;
+        font-size: 30px;
+        font-weight: lighter;
+        opacity: 80%;
     }
 }
 .container {
