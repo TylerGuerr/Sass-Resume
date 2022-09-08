@@ -1,0 +1,132 @@
+.sectionTwo .skills h2, .sectionTwo .experience h2, .sectionOne .contact h2, .sectionOne .personalProfile h2, .sectionOne .education h2 {
+  width: 55%;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 3px solid rgb(176, 172, 172);
+  font-family: "Arial Narrow Bold", sans-serif;
+  color: #6B5E62;
+  letter-spacing: 3px;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  background-color: #f2fbff;
+  font-family: Arial;
+}
+
+.foreground {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url("/Users/tylerguerricabeitia/Desktop/MTEC Web Dev/Sass Resume/images/computer.jpg");
+  background-size: fill;
+  height: 350px;
+  position: relative;
+}
+
+.profile img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid #d8f8f5;
+  border-radius: 100px;
+  position: absolute;
+  left: 150px;
+  top: 80px;
+}
+
+.name {
+  position: absolute;
+  left: 450px;
+  top: 80px;
+}
+.name h1 {
+  color: #f2fbff;
+  font-size: 55px;
+}
+.name h2 {
+  color: #f2fbff;
+  font-size: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.sectionOne {
+  background-color: white;
+  padding-left: 60px;
+  width: 50%;
+  height: 1000px;
+}
+.sectionOne .personalProfile, .sectionOne .education {
+  width: 70%;
+}
+.sectionOne .personalProfile p, .sectionOne .education p {
+  font-size: 18px;
+  padding-bottom: 5px;
+  color: #827377;
+  padding-left: 40px;
+}
+.sectionOne .contact ul {
+  width: 60%;
+  list-style-type: none;
+  font-size: 18px;
+  padding-bottom: 30px;
+  color: rgb(88, 83, 83);
+}
+.sectionOne .contact ul svg {
+  margin-right: 15px;
+}
+.sectionOne .contact ul .address {
+  display: flex;
+}
+.sectionOne .contact ul .address svg {
+  transform: scale(1.7);
+  margin: 10px 21px 0px -0.5px;
+}
+.sectionOne .contact ul .email {
+  display: flex;
+}
+.sectionOne .contact ul .email svg {
+  margin-right: 15px;
+}
+.sectionOne .contact ul li {
+  padding-bottom: 10px;
+}
+
+.sectionTwo {
+  background-color: #d8f8f5;
+  padding-left: 60px;
+  width: 80%;
+}
+.sectionTwo .skills, .sectionTwo .experience {
+  width: 70%;
+}
+.sectionTwo .skills h3, .sectionTwo .experience h3 {
+  font-size: 22px;
+  padding-bottom: 5px;
+  color: rgb(88, 83, 83);
+  margin-left: 15px;
+}
+.sectionTwo .skills h3 span, .sectionTwo .experience h3 span {
+  color: #827377;
+  font-size: 19px;
+  padding-left: 5px;
+}
+.sectionTwo .skills ul, .sectionTwo .experience ul {
+  font-size: 18px;
+  padding-bottom: 5px;
+  color: rgb(88, 83, 83);
+  margin-left: 10px;
+}
+.sectionTwo .skills ul li, .sectionTwo .experience ul li {
+  padding-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

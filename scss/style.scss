@@ -1,0 +1,142 @@
+@use '_variables';
+
+
+%header-format {
+    width: 55%;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 3px solid variables.$border-color;
+    font-family:'Arial Narrow Bold', sans-serif;
+    color: variables.$primary-color;
+    letter-spacing: 3px;
+}
+@mixin p-format($fontysize, $patbot, $grayish) {
+    font-size: $fontysize;
+    padding-bottom: $patbot;
+    color: $grayish;
+}
+
+
+body {
+    margin: 0;
+    padding: 50px;
+    background-color: variables.$tertiary-color;
+    font-family: Arial;
+}
+.foreground {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.header {
+    display:flex;
+    justify-content: space-evenly;
+    background-image: url("/Users/tylerguerricabeitia/Desktop/MTEC Web Dev/Sass Resume/images/computer.jpg");
+    background-size:fill;
+   
+    height: 350px;
+    position: relative;
+}
+.profile {
+    img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border: 2px solid variables.$hightlight;
+        border-radius: 100px;
+        position: absolute;
+        left: 150px;
+        top: 80px;
+    }
+}
+.name {
+    position:absolute;
+    left: 450px;
+    top: 80px;
+    h1 {
+        color: variables.$tertiary-color;
+        font-size: 55px;
+    }
+    h2 {
+        color: variables.$tertiary-color;
+        font-size: 35px;
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.sectionOne {
+    background-color: white;
+    padding-left: 60px;
+    width: 50%;
+    height: 1000px;
+    .personalProfile, .education {
+        width: 70%;
+        h2 {
+            @extend %header-format;
+        }
+        p {
+            @include p-format(18px, 5px, variables.$secondary-color);
+            padding-left: 40px;
+        }
+    }
+    .contact {
+        h2 {
+            @extend %header-format;
+        }
+        ul {
+            width: 60%;
+            list-style-type: none;
+            @include p-format(18px, 30px, rgb(88, 83, 83));
+            svg {
+                margin-right: 15px;
+            }
+            .address {
+                display:flex;
+                svg {
+                    transform: scale(1.7);
+                    margin: 10px 21px 0px -0.5px;
+                }
+            }
+            .email {
+                display:flex;
+                svg {
+                    margin-right: 15px;
+                }
+            }
+            li {
+                padding-bottom: 10px;
+            }
+
+        }
+
+    }
+}
+.sectionTwo {
+    background-color: variables.$hightlight;
+    padding-left: 60px;
+    width: 80%;
+    .skills, .experience {
+        width: 70%;
+        h2{
+            @extend %header-format;
+        }
+        h3 {
+            @include p-format(22px, 5px, rgb(88, 83, 83));
+            margin-left: 15px;
+            span {
+                color: variables.$secondary-color;
+                font-size: 19px;
+                padding-left: 5px;
+            }
+        }
+        ul {
+            @include p-format(18px, 5px, rgb(88, 83, 83));
+            margin-left: 10px;
+            li {
+                padding-bottom: 5px;
+            }
+        }
+
+    }
+}
