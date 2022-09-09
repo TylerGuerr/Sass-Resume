@@ -161,6 +161,7 @@ body {
     width: 70%;
   }
   .sectionOne .personalProfile p, .sectionOne .education p {
+    font-size: 15px;
     padding-left: 0px;
   }
   .sectionOne .contact ul {
@@ -177,12 +178,15 @@ body {
     transform: scale(2.5);
     margin: 10px 26px 0px -0.5px;
   }
+  .sectionOne .contact ul .email {
+    display: block;
+  }
   .sectionTwo {
-    padding-left: 30px;
+    padding-left: 25px;
     width: 80%;
   }
   .sectionTwo .skills, .sectionTwo .experience {
-    width: 80%;
+    width: 90%;
   }
   .sectionTwo .skills h3, .sectionTwo .experience h3 {
     font-size: 19px;

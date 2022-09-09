@@ -171,6 +171,7 @@ body {
         .personalProfile, .education {
             width: 70%;
             p {
+                font-size: 15px;
                 padding-left: 0px;
             }
         }
@@ -187,15 +188,18 @@ body {
                         transform: scale(2.5);
                         margin: 10px 26px 0px -0.5px;
                     }
-                }   
+                }
+                .email {
+                    display: block;
+                }  
             }
         }
     }
     .sectionTwo {
-        padding-left: 30px;
+        padding-left: 25px;
         width: 80%;
         .skills, .experience {
-            width: 80%;
+            width: 90%;
             h3 {
                 @include p-format(19px, 0px, rgb(88, 83, 83));
                 margin-left: 5px;
