@@ -154,7 +154,7 @@ body {
   }
   .sectionOne {
     padding-left: 20px;
-    width: 75%;
+    width: 85%;
     height: 1150px;
   }
   .sectionOne .personalProfile, .sectionOne .education {
@@ -175,7 +175,6 @@ body {
     margin-right: 15px;
   }
   .sectionOne .contact ul .address svg {
-    transform: scale(2.5);
     margin: 10px 26px 0px -0.5px;
   }
   .sectionOne .contact ul .email {
