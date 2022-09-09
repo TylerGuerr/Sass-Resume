@@ -21,7 +21,7 @@ body {
 .header {
   display: flex;
   justify-content: space-evenly;
-  background-image: url("/Users/tylerguerricabeitia/Desktop/MTEC Web Dev/Sass Resume/images/computer.jpg");
+  background-image: url("images/computer.jpg");
   background-size: fill;
   height: 350px;
   position: relative;
