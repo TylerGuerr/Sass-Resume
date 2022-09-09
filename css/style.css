@@ -181,6 +181,9 @@ body {
   .sectionOne .contact ul .email {
     display: block;
   }
+  .sectionOne .contact ul .email svg {
+    margin-right: 15px;
+  }
   .sectionTwo {
     padding-left: 25px;
     width: 80%;
