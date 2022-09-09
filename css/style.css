@@ -68,7 +68,7 @@ body {
   height: 1000px;
 }
 .sectionOne .personalProfile, .sectionOne .education {
-  width: 70%;
+  width: 80%;
 }
 .sectionOne .personalProfile p, .sectionOne .education p {
   font-size: 18px;
@@ -130,6 +130,75 @@ body {
 }
 .sectionTwo .skills ul li, .sectionTwo .experience ul li {
   padding-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 0px;
+  }
+  .profile img {
+    height: 100px;
+    width: 100px;
+    left: 50px;
+    top: 120px;
+  }
+  .name {
+    left: 170px;
+    top: 120px;
+  }
+  .name h1 {
+    font-size: 20px;
+  }
+  .name h2 {
+    font-size: 15px;
+  }
+  .sectionOne {
+    padding-left: 20px;
+    width: 75%;
+    height: 1150px;
+  }
+  .sectionOne .personalProfile, .sectionOne .education {
+    width: 70%;
+  }
+  .sectionOne .personalProfile p, .sectionOne .education p {
+    padding-left: 0px;
+  }
+  .sectionOne .contact ul {
+    width: 80%;
+    margin-left: -40px;
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: rgb(88, 83, 83);
+  }
+  .sectionOne .contact ul svg {
+    margin-right: 15px;
+  }
+  .sectionOne .contact ul .address svg {
+    transform: scale(2.5);
+    margin: 10px 26px 0px -0.5px;
+  }
+  .sectionTwo {
+    padding-left: 30px;
+    width: 80%;
+  }
+  .sectionTwo .skills, .sectionTwo .experience {
+    width: 80%;
+  }
+  .sectionTwo .skills h3, .sectionTwo .experience h3 {
+    font-size: 19px;
+    padding-bottom: 0px;
+    color: rgb(88, 83, 83);
+    margin-left: 5px;
+  }
+  .sectionTwo .skills ul, .sectionTwo .experience ul {
+    font-size: 15px;
+    padding-bottom: 5px;
+    color: rgb(88, 83, 83);
+    margin-left: -40px;
+  }
+  .sectionTwo .skills ul li, .sectionTwo .experience ul li {
+    padding-bottom: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

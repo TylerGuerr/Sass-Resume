@@ -74,7 +74,7 @@ body {
     width: 50%;
     height: 1000px;
     .personalProfile, .education {
-        width: 70%;
+        width: 80%;
         h2 {
             @extend %header-format;
         }
@@ -112,7 +112,6 @@ body {
             }
 
         }
-
     }
 }
 .sectionTwo {
@@ -141,5 +140,74 @@ body {
             }
         }
 
+    }
+}
+@media (max-width:700px){
+    body {
+        padding: 0px;
+    }
+    .profile {
+        img {
+            height: 100px;
+            width: 100px;
+            left: 50px;
+            top: 120px;
+        }
+    }
+    .name {
+        left: 170px;
+        top: 120px;
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 15px;
+        }
+    }
+    .sectionOne {
+        padding-left: 20px;
+        width: 75%;
+        height: 1150px;
+        .personalProfile, .education {
+            width: 70%;
+            p {
+                padding-left: 0px;
+            }
+        }
+        .contact {
+            ul {
+                width: 80%;
+                margin-left: -40px;
+                @include p-format(15px, 15px, rgb(88, 83, 83));
+                svg {
+                    margin-right: 15px;
+                }
+                .address {
+                    svg {
+                        transform: scale(2.5);
+                        margin: 10px 26px 0px -0.5px;
+                    }
+                }   
+            }
+        }
+    }
+    .sectionTwo {
+        padding-left: 30px;
+        width: 80%;
+        .skills, .experience {
+            width: 80%;
+            h3 {
+                @include p-format(19px, 0px, rgb(88, 83, 83));
+                margin-left: 5px;
+            }
+            ul {
+                @include p-format(15px, 5px, rgb(88, 83, 83));
+                margin-left: -40px;
+                li {
+                    padding-bottom: 5px;
+                }
+            }
+    
+        }
     }
 }
