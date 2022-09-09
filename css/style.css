@@ -132,7 +132,7 @@ body {
   padding-bottom: 5px;
 }
 
-@media (max-width: 828px) {
+@media (max-width: 1000px) {
   body {
     padding: 0px;
   }
