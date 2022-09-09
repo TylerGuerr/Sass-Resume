@@ -167,7 +167,7 @@ body {
     .sectionOne {
         padding-left: 20px;
         width: 85%;
-        height: 1150px;
+        height: 1250px;
         .personalProfile, .education {
             width: 70%;
             p {
@@ -185,13 +185,13 @@ body {
                 }
                 .address {
                     svg {
-                        margin: 10px 26px 0px -0.5px;
+                        margin: 10px 21px 0px 5px;
+                        transform: scale(3.5);
                     }
                 }
                 .email {
-                    display: block;
                     svg {
-                        margin-right: 15px;
+                        margin-right: 13px;       
                     }
                 }  
             }
